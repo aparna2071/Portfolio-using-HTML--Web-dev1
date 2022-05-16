@@ -1,3 +1,19 @@
+<h3>Contact Details</h3>
 <a href="https://twitter.com/AparnaSoneja">Twitter</a><br>
 <a href="https://www.linkedin.com/in/aparna-35066b191/">Linkedin</a><br>
 <a href="mailto:aparnaaugust3@gmail.com">Email</a><br>
+<hr>
+<h3>Contact Me</h3>
+<!-- <form action="index.html" method="post">  --><!-- action means when form gets submitted, it goes where the action is specified(index.html) -->
+    <!-- method=post means whatever input is taken from the user, is posted on index.html -->
+    <form action="mailto:aparnaaugust3@gmail.com" method="post" enctype="text/plain">  <!-- enctype=text/plain used to display plain text -->
+    <label>Your Name:</label>
+    <input type="text" name="yourname"><br>
+    <label>Your Email:</label>
+    <input type="email" name="yourmail"><br>
+    <label>Your message</label><br>
+    <!-- <input type="text"><br> --> <!-- msg of user can be long also, so instead of text, use textarea tag, which dynamically increases the size of textarea/box-->
+    <textarea rows="10" cols="40" name="yourmsg"></textarea><br> <!-- without name attribute, the data won't be displayed on mail -->
+    <input type="submit">
+</form>
+
